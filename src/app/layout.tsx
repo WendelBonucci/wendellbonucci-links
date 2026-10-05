@@ -1,6 +1,4 @@
 import "./globals.css";
-
-import Background from "@/components/home/background/Background";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -86,8 +84,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR">
       <body className="bg-(--color-background) text-(--color-white)">
-        <Background />
-
         <main className="relative z-10">
           {children}
         </main>
