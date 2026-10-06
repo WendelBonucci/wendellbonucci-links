@@ -24,11 +24,11 @@ const skills = [
 
 export default function Hero() {
     return (
-        <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-(--color-black) px-4 py-16 sm:px-6">
+        <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-transparent px-4 py-6 sm:px-6">
             <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-[120px]"
                 style={{ backgroundColor: "var(--color-blue)" }} />
 
-            <div className="relative w-full max-w-lg rounded-3xl border border-white/10 bg-white/2  px-6 pb-8 pt-16 backdrop-blur-2xl sm:px-10 sm:pb-10 sm:pt-20 shadow-2xl">
+            <div className="relative w-full max-w-lg rounded-3xl border border-white/10 bg-white/2  px-6 pb-8 pt-11 backdrop-blur-2xl sm:px-10 sm:pb-10 sm:pt-20 shadow-2xl">
 
                 <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
                     <div className="relative rounded-full p-0.5 shadow-lg"

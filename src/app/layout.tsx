@@ -1,12 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import TechBackground from "@/components/home/background/TechBackground";
 
 export const metadata: Metadata = {
   title: "Wendell Bonucci | Links & Perfil Profissional",
-
   description:
     "Página oficial de Wendell Bonucci. Acesse meus projetos, redes sociais, experiências profissionais e conheça mais sobre meu trabalho com desenvolvimento de software, análise de dados e soluções digitais.",
-
   keywords: [
     "Wendell Bonucci",
     "Wendell Bonucci Desenvolvedor",
@@ -24,23 +23,19 @@ export const metadata: Metadata = {
     "Desenvolvimento de Software",
     "Fortaleza CE",
   ],
-
   authors: [
     {
       name: "Wendell Bonucci",
       url: "https://wendellbonucci.vercel.app/",
     },
   ],
-
   creator: "Wendell Bonucci",
   publisher: "Wendell Bonucci",
-
   icons: {
     icon: "/wendellbonucci.ico",
     shortcut: "/wendellbonucci.ico",
     apple: "/wendellbonucci.ico",
   },
-
   openGraph: {
     title: "Wendell Bonucci | Perfil Profissional",
     description:
@@ -58,7 +53,6 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Wendell Bonucci | Perfil Profissional",
@@ -66,7 +60,6 @@ export const metadata: Metadata = {
       "Projetos, redes sociais, experiências e soluções digitais desenvolvidas por Wendell Bonucci.",
     images: ["/og-image.jpg"],
   },
-
   robots: {
     index: true,
     follow: true,
@@ -83,7 +76,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR">
-      <body className="bg-(--color-background) text-(--color-white)">
+      <body className="relative bg-[#0d0d0d] text-(--color-white) antialiased selection:bg-blue-500/20 selection:text-blue-200">
+        {/* Fundo Animado Tecnológico */}
+        <TechBackground />
+
+        {/* Conteúdo da Aplicação */}
         <main className="relative z-10">
           {children}
         </main>

@@ -45,7 +45,7 @@ const links = [
 
 export default function Links() {
     return (
-        <section className="relative w-full overflow-hidden bg-(--color-black) px-4 py-12 sm:px-6 sm:py-20">
+        <section className="relative w-full overflow-hidden bg-transparent px-4 py-12 sm:px-6 sm:py-20">
             <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-10 blur-[120px]" style={{ backgroundColor: "var(--color-blue)" }} />
 
             <div className="relative mx-auto w-full max-w-lg">
