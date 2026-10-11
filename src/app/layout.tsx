@@ -76,11 +76,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR">
-      <body className="relative bg-[#0d0d0d] text-(--color-white) antialiased selection:bg-blue-500/20 selection:text-blue-200">
-        {/* Fundo Animado Tecnológico */}
+      <body className="relative bg-black text-(--color-white) antialiased selection:bg-blue-500/20 selection:text-blue-200">
         <TechBackground />
 
-        {/* Conteúdo da Aplicação */}
         <main className="relative z-10">
           {children}
         </main>
