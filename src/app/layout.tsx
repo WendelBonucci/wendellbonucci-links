@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import TechBackground from "@/components/home/background/TechBackground";
 
+import Footer from "@/components/layout/Footer";
+
 export const metadata: Metadata = {
   title: "Wendell Bonucci | Links & Perfil Profissional",
   description:
@@ -81,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <main className="relative z-10">
           {children}
+          <Footer />
         </main>
       </body>
     </html>
