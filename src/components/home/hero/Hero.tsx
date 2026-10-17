@@ -65,7 +65,20 @@ export default function Hero() {
 
                         <div aria-hidden="true">
                             {animateText ? (
-                                <Typewriter options={{ strings: roles, autoStart: true, loop: true, delay: 55, deleteSpeed: 30, pauseFor: 1800 }} />
+                                <Typewriter
+                                    onInit={(typewriter) => {
+                                        const animation = typewriter
+                                            .changeDelay(55)
+                                            .changeDeleteSpeed(30);
+
+                                        roles.forEach((role) => {
+                                            animation.typeString(role).pauseFor(1800).deleteAll();
+                                        });
+
+                                        animation.start();
+                                    }}
+                                    options={{ loop: true }}
+                                />
                             ) : (
                                 <span>Desenvolvedor Full-Stack</span>
                             )}
